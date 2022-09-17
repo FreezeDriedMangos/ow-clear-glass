@@ -1,0 +1,6 @@
+﻿<Project>
+  <PropertyGroup>
+    <OutputPath>$(AppData)\OuterWildsModManager\OWML\Mods\clay.ClearGlass</OutputPath>
+    <OuterWildsModsDirectory>$(AppData)\OuterWildsModManager\OWML\Mods</OuterWildsModsDirectory>
+  </PropertyGroup>
+</Project>

@@ -1,9 +1,9 @@
 {
   "$schema": "https://raw.githubusercontent.com/amazingalek/owml/master/schemas/manifest_schema.json",
-  "filename": "ModTemplate.dll",
-  "author": "Raicuparta",
-  "name": "Mod Template",
-  "uniqueName": "Raicuparta.ModTemplate",
+  "filename": "ClearGlass.dll",
+  "author": "clay",
+  "name": "Clear Glass",
+  "uniqueName": "clay.ClearGlass",
   "version": "0.1.0",
   "owmlVersion": "2.6.0"
 }
