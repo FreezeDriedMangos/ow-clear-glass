@@ -1,3 +1,6 @@
+
+![Thumbnail](thumnail_midres.png?raw=true)
+
 Does this sound familiar? 
 "My 300k year old glass is looking foggy, I can't even see through it! Not to mention my ship, someone covered the cockpit in gold paint!" 
 
