@@ -23,16 +23,14 @@ namespace ClearGlass
                     // clear up all other glass
                     foreach(var renderer in Resources.FindObjectsOfTypeAll<MeshRenderer>())
                     {
-                        var materials = new Material[renderer.materials.Length]; 
-                        bool needsSwap = false;
-                        for (var i = 0; i < renderer.materials.Length; i++)
+                        var materials = renderer.sharedMaterials;
+                        for (var i = 0; i < materials.Length; i++)
                         {
-                            materials[i] = renderer.materials[i];   
-                            if      (renderer.materials[i].name == "ShipExterior_HEA_VillageCloth_mat (Instance)") { materials[i] = clearGlassMat;         needsSwap = true; }
-                            else if (renderer.materials[i].name == "Structure_NOM_Glass_Opaque_mat (Instance)")    { materials[i] = nomaiianClearGlassMat; needsSwap = true; }
+                            if (!materials[i]) continue;
+                            if (materials[i].name == "ShipExterior_HEA_VillageCloth_mat") materials[i] = clearGlassMat;
+                            else if (materials[i].name == "Structure_NOM_Glass_Opaque_mat") materials[i] = nomaiianClearGlassMat;
                         }
-
-                        if (needsSwap) renderer.materials = materials;
+                        renderer.sharedMaterials = materials;
                     }
 
                     // done!
