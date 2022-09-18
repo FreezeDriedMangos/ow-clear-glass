@@ -26,7 +26,7 @@ namespace ClearGlass
                     {
                         if (!materials[i]) continue;
                         if (materials[i].name.StartsWith("ShipExterior_HEA_VillageCloth_mat")) materials[i] = clearGlassMat;
-                        else if (materials[i].name.StartsWith("Structure_NOM_Glass_Opaque_mat")) materials[i] = nomaiianClearGlassMat;
+                        else if (materials[i].name.StartsWith("Structure_NOM_Glass_Opaque")) materials[i] = nomaiianClearGlassMat;
                     }
                     renderer.sharedMaterials = materials;
                 }
