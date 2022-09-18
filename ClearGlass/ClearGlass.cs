@@ -15,8 +15,8 @@ namespace ClearGlass
                 if (loadScene != OWScene.SolarSystem) return;     
                 
                 // get some nice glass materials
-                var clearGlassMat = GameObject.Find("Ship_Body/Module_Cockpit/Geo_Cockpit/Cockpit_Geometry/Cockpit_Interior/Cockpit_TransparentGlass_Structural").GetComponent<MeshRenderer>().material;
-                var nomaiianClearGlassMat = GameObject.Find("CaveTwin_Body/Sector_CaveTwin/Interactables_CaveTwin/Structure_NOM_EyeSymbol/Structure_NOM_EyeSymbol_Glass").GetComponent<MeshRenderer>().materials[1];
+                var clearGlassMat = GameObject.Find("Ship_Body/Module_Cockpit/Geo_Cockpit/Cockpit_Geometry/Cockpit_Interior/Cockpit_TransparentGlass_Structural").GetComponent<MeshRenderer>().sharedMaterial;
+                var nomaiianClearGlassMat = GameObject.Find("CaveTwin_Body/Sector_CaveTwin/Interactables_CaveTwin/Structure_NOM_EyeSymbol/Structure_NOM_EyeSymbol_Glass").GetComponent<MeshRenderer>().sharedMaterials[1];
                 
                 // clear up all other glass
                 foreach(var renderer in Resources.FindObjectsOfTypeAll<MeshRenderer>())
